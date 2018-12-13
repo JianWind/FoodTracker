@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wuk-1N-akX">
-                                <rect key="frame" x="21" y="85.999999999999972" width="363" height="394.33333333333326"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Wuk-1N-akX">
+                                <rect key="frame" x="21" y="86" width="320" height="592"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="dfsdfsd" borderStyle="bezel" placeholder="Enter meal name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6cP-TL-Adf" userLabel="as" colorLabel="IBBuiltInLabel-Red">
-                                        <rect key="frame" x="31.666666666666657" y="0.0" width="300" height="22"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6cP-TL-Adf" userLabel="as" colorLabel="IBBuiltInLabel-Red">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="S5N-cg-Dc7"/>
                                         </constraints>
@@ -31,28 +31,26 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultphoto" translatesAutoresizingMaskIntoConstraints="NO" id="9zf-KQ-NUv">
-                                        <rect key="frame" x="31.666666666666657" y="30" width="300" height="300"/>
+                                        <rect key="frame" x="0.0" y="29" width="320" height="500"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="350" id="XJt-kf-8vU"/>
                                             <constraint firstAttribute="width" secondItem="9zf-KQ-NUv" secondAttribute="height" multiplier="1:1" id="y2L-BD-7cm"/>
-                                            <constraint firstAttribute="height" constant="300" id="yex-XL-B42"/>
+                                            <constraint firstAttribute="height" constant="500" id="yex-XL-B42"/>
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="FvO-Ve-q1p" appends="YES" id="WXs-PW-WbJ"/>
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dHM-1K-BMy" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="55.666666666666671" y="338" width="251.66666666666663" height="56.333333333333314"/>
+                                        <rect key="frame" x="34.000000000000014" y="536" width="251.66666666666669" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="251.66999999999999" id="GyY-At-6yb"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="6cP-TL-Adf" firstAttribute="top" secondItem="Wuk-1N-akX" secondAttribute="top" id="0hl-Vm-byN"/>
                                     <constraint firstItem="6cP-TL-Adf" firstAttribute="trailing" secondItem="9zf-KQ-NUv" secondAttribute="trailing" id="4Om-iF-1Vb"/>
-                                    <constraint firstAttribute="bottom" secondItem="dHM-1K-BMy" secondAttribute="bottom" id="A9G-mf-Diu"/>
-                                    <constraint firstAttribute="trailing" secondItem="dHM-1K-BMy" secondAttribute="trailing" constant="55.670000000000002" id="cnS-9v-MGM"/>
-                                    <constraint firstItem="dHM-1K-BMy" firstAttribute="leading" secondItem="Wuk-1N-akX" secondAttribute="leading" constant="55.670000000000002" id="kAm-ZE-UVv"/>
-                                    <constraint firstItem="dHM-1K-BMy" firstAttribute="top" secondItem="9zf-KQ-NUv" secondAttribute="bottom" constant="8" id="n5I-oO-laI"/>
+                                    <constraint firstItem="dHM-1K-BMy" firstAttribute="top" secondItem="9zf-KQ-NUv" secondAttribute="bottom" constant="7" id="Y8U-zz-8Q9"/>
                                     <constraint firstItem="6cP-TL-Adf" firstAttribute="leading" secondItem="9zf-KQ-NUv" secondAttribute="leading" id="zZu-E8-ekQ"/>
                                 </constraints>
                             </stackView>
@@ -60,11 +58,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Wuk-1N-akX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="0aV-6d-QTV"/>
-                            <constraint firstItem="Wuk-1N-akX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="Kyf-Jf-cpt"/>
-                            <constraint firstItem="Wuk-1N-akX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="QLF-rr-eNs"/>
+                            <constraint firstItem="Wuk-1N-akX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="4e8-k4-g3Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wuk-1N-akX" secondAttribute="bottom" constant="58" id="EIc-um-vwI"/>
                             <constraint firstItem="Wuk-1N-akX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="ad5-b8-TgF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wuk-1N-akX" secondAttribute="trailing" constant="30" id="gr2-VC-70Q"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wuk-1N-akX" secondAttribute="bottom" constant="255.66999999999999" id="qmy-4O-s2E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
